@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PI Recaller</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .recall-container {
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+        font-family: "Sen", sans-serif;
+        position: relative;
+      }
+      #source {
+        width: 70vw;
+        height: 50px;
+        margin: auto;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 10px;
+        border-width: 0;
+        font-size: 24px;
+        padding: 5px;
+      }
+
+      #result {
+        width: 70vw;
+        height: 50px;
+        position: absolute;
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        overflow: auto;
+      }
+      .title {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="recall-container">
+      <div class="title">
+        <a href="index.html">Home</a>
+        <h1>Recall PI Digits</h1>
+        <a href="memorize.html">Memorize</a>
+      </div>
+      <input type="text" id="source" />
+      <div id="result"></div>
+    </div>
+    <script src="js/recall.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <title>PI Challenge</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+      }
+
+      .hyperlink {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 3.2rem;
+        font-family: "Sen", sans-serif;
+        text-decoration: none;
+        transition: all 0.2s ease-in-out;
+      }
+
+      #memorize {
+        background-color: cadetblue;
+      }
+      /* 
+      #memorize:hover {
+        transform: scale(1.1, 1);
+        transform-origin: left;
+      } */
+
+      #recall {
+        background-color: blanchedalmond;
+      }
+
+      /* #recall:hover {
+        transform: scale(1.1, 1);
+        transform-origin: right;
+      } */
+
+      @media screen and (max-width: 600px) {
+        .container {
+          flex-direction: column;
+        }
+        #memorize,
+        #recall {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a id="memorize" class="hyperlink" href="memorize.html">
+        <div>
+          Memorize PI
+        </div>
+      </a>
+      <a id="recall" class="hyperlink" href="recall.html">
+        <div>
+          Recall PI
+        </div>
+      </a>
+    </div>
+  </body>
+</html>

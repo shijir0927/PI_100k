@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sen&display=swap"
+      rel="stylesheet"
+    />
+    <title>Memorize PI</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      .memo-container {
+        width: 100vw;
+        height: 100vh;
+        background-color: bisque;
+        font-family: "Sen", sans-serif;
+      }
+      #pi-digits {
+        text-align: center;
+        text-decoration: none;
+        list-style-type: none;
+        background-color: bisque;
+      }
+
+      .group {
+        font-size: 24px;
+        margin: 10px 0;
+      }
+      li.selected {
+        background: yellow;
+      }
+
+      .title {
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 40px;
+        display: flex;
+        justify-content: space-around;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="memo-container">
+      <div class="title">
+        <a href="index.html">Home</a>
+        <h1>100000 digits of PI</h1>
+        <a href="recall.html">Recall</a>
+      </div>
+      <ul id="pi-digits"></ul>
+    </div>
+    <script src="js/memorize.js"></script>
+  </body>
+</html>
